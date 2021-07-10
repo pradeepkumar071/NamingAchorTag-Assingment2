@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MongoDB</title>
+    </head>
+    <body  bgcolor="#ffdead">
+        <a name="top"></a>
+        <a name="title2"></a>
+        <h1> Mongo DB</h1>
+        <img src="images/mongodb.jfif" alt="" height="180" width="180">
+        <h2>Disscuss about MongoDB</h2>
+        <p><a href="#MongoDB">MongoDB</a></p>
+        <p><a href="#InstallingMongoDBonWindows">Installing MongoDB on Windows</a></p>
+        <p><a href="#CollectionsandDatabases">Collections and Databases</a></p>
+        <br>
+        <h2><a name="MongoDB">MongoDB</a></h2>
+        <p>MongoDB is one of the most popular NoSQL databases today. It is a core part of MEAN and MERN stacks that are used for web application development. MongoDB stores data in key-value pairs represented as JSON structure in objects.</p>
+        <P>These objects are known as documents. These documents, are in, turn stored in dynamic collections. And collections are stored in a MongoDB database. We will discuss more about MongoDB documents and collections, but first, we will go through installation steps. </P>
+        <p><a href="#top">Go to Top</a></p>
+        <h2><a name="InstallingMongoDBonWindows">Installing MongoDB on Windows</a></h2>
+        <p>To install MongoDB in windows, open a browser and go to the following link.</p>
+        <P><strong>//www.mongodb.com/download-center/community?jmp=docs.</strong></P>
+        <P>You can find something like this on the screen. </P>
+        <img src="images/mongodb1.png" alt="" height="180" width="180">
+        <p>Select the latest version of MongoDB and your Windows OS. You will have two package options. Select the MSI option. Then, click the download button. It will download a .msi package. Open it after the download is complete and go through the installation steps.</p>
+        <p>By default, MongoDB will be installed in the C drive. Open the <strong>C:/Program Files folder/MongoDB/Server folder .</strong> Open it. In this folder, you will find yet another folder. In my case, the name of the folder is “4.2”. Folder name depends upon the version you have downloaded. Open this folder and you will find a few other folders and files. Open the folder named “bin”. The file we need to start MongoDB is present in this folder. The name of this file is “mongod”.</p>
+        <p>Open a terminal and go to the path where mongod file resides and then type “mongod”</p>
+        <img src="images/mongodb2.png" alt="" height="190" width="250">
+        <p>And it won’t work. Check the exception that it throws in the above image. It says we need a directory for storage in this path “C:\data\db\”. So, create this path with proper permission(Read and Write) and then again run the “mongod” command. Now the server will start listening on port 27017.</p>
+        <p><a href="#top">Go to Top</a></p>
+         <h2><a name="CollectionsandDatabases">Collections and Databases</a></h2>
+         <p>Documents in MongoDB are stored in collections. Collections in MongoDB are similar to tables in SQL. There can be any number of documents in a single collection. Collections, in turn, are stored in a database. Similar to tables in SQL that are also stored in a database. As there can be any number of tables in a single database, there can be any number of collections in a database.</p>
+         <P>So let’s discuss how to create all these in MongoDB.</P>
+         <p>First of all, we need to start the mongo shell. Remember, earlier, we used the mongod command to run MongoDB? Open a terminal and start the terminal again. After that, open another terminal and go to the same path – “C:\Program Files\MongoDB\Server\4.2\bin”. This is the path in my machine. “4.2” can vary depending upon the version of MongoDB installed in your device.
+         <br>
+            Type “mongo” and press enter. It will start the mongo shell. But do not close the terminal where MongoDB is running.</p>
+            <p><a href="#top">Go to Top</a></p>
+            <p><a href="namingAnchor-part2.html">Go to Mainpage</a></p>
+    </body>
+</html>
+
